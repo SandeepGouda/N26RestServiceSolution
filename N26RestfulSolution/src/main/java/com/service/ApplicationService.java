@@ -39,7 +39,7 @@ public class ApplicationService {
 		};
 		
 		//Cache expire in 60S can be changed accordingly to verify 
-		cache = CacheBuilder.newBuilder().expireAfterWrite(15, TimeUnit.SECONDS).removalListener(new RemovalListener() {
+		cache = CacheBuilder.newBuilder().expireAfterWrite(60, TimeUnit.SECONDS).removalListener(new RemovalListener() {
 			
 			
 			/* 
